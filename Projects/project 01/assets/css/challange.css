@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #333;
+
+  /* font-weight: 600; */
+}
+
+/* Card */
+
+.product {
+  border: 5px solid #444;
+  /* padding: 10px; */
+  width: 825px;
+  margin: 100px auto 0;
+
+  position: relative;
+}
+
+.product::after {
+  content: "SOLD";
+  background-color: crimson;
+  color: #f7f7f7;
+  display: inline-block;
+  padding: 8px 24px;
+  border-radius: 5px;
+  font-weight: bold;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  transform: translate(-40%, -50%);
+}
+
+.product-title {
+  text-align: center;
+  font-size: 22px;
+  text-transform: uppercase;
+  padding: 10px 0;
+  /* margin-bottom: 20px; */
+  background-color: #efefef;
+}
+
+/* Card Head */
+
+/* Card BODY */
+
+.price {
+  font-size: 24px;
+  float: left;
+}
+
+.shipping {
+  padding-top: 8px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 20px;
+}
+
+.card-description {
+  clear: both;
+}
+
+.info:link,
+.info:visited {
+  color: #444;
+  display: inline-block;
+  text-decoration: underline #444;
+  text-underline-offset: 3px;
+  margin: 10px 0 30px 0;
+}
+
+.colors {
+  list-style: none;
+}
+
+.color-list {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.color-list:last-child {
+  margin-right: 0;
+}
+.color-1 {
+  background-color: #161515;
+}
+
+.color-2 {
+  background-color: #2f2fef;
+}
+
+.color-3 {
+  background-color: #efc734;
+}
+
+.color-4 {
+  background-color: #d03232;
+}
+
+.color-5 {
+  background-color: #167c16;
+}
+
+.color-6 {
+  background-color: #a52a2a;
+}
+
+.card-body__2-title {
+  margin-bottom: 10px;
+}
+
+.product-detail {
+  /* list-style-position: inside; */
+  list-style: square;
+  list-style-position: inside;
+
+  /* padding-left: 30px; */
+}
+
+.product-detail li {
+  margin-bottom: 8px;
+  padding-left: 5px;
+}
+
+/* Card Footer */
+
+.card-footer {
+  clear: both;
+}
+.btn {
+  color: #fff;
+  padding: 20px 0;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: #222;
+  text-transform: uppercase;
+  width: 100%;
+}
