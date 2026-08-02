@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel</title>
+    <link rel="stylesheet" href="./assets/css/navbar.css" />
+    <link rel="stylesheet" href="./assets/css/carousel.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <a href="./index.html" class="nav-link nav-active">Breadcrumb page</a>
+        <a href="./table.html" class="nav-link">Table page</a>
+        <a href="./pagination.html" class="nav-link">Pagination page</a>
+      </nav>
+      <!----------------------
+       CAROUSEL CONTAINER
+      ----------------------->
+      <main class="carousel-container">
+        <!---------------------
+           CAROUSEL ITEM
+        ---------------------->
+
+        <div class="carousel-item">
+          <div class="carousel-box">
+            <!---------------------
+              CAROUSEL IMAGE
+            ---------------------->
+            <img src="./assets/img/maria.jpg" alt="" class="carousel-img" />
+
+            <!---------------------
+               CAROUSEL BODY
+            ---------------------->
+            <blockqoute class="testimonial">
+              <p class="testimonial-txt">
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Facilis odio veritatis atque iure maiores error ex iste in
+                assumenda, neque, recusandae, enim!"
+              </p>
+              <p class="testimonial-author">Maria de Almeida</p>
+              <p class="testimonial-job">
+                Senior Product Manager at EDP Comercial
+              </p>
+            </blockqoute>
+
+            <!---------------------
+               CAROUSEL ARROW
+            ---------------------->
+
+            <button class="btn btn-left">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="arrow"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5 8.25 12l7.5-7.5"
+                />
+              </svg>
+            </button>
+
+            <button class="btn btn-right">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="arrow"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </button>
+
+            <!---------------------
+              CAROUSEL DOTS
+            ---------------------->
+
+            <div class="carousel-dots">
+              <button class="carousel-dot dot-fill">&nbsp;</button>
+              <button class="carousel-dot">&nbsp;</button>
+              <button class="carousel-dot">&nbsp;</button>
+              <button class="carousel-dot">&nbsp;</button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

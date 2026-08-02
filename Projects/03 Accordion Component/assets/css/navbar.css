@@ -1,0 +1,28 @@
+nav {
+  margin-bottom: 5.2rem;
+
+  display: flex;
+  justify-content: end;
+  gap: 3.6rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  color: var(--txt_color);
+  text-underline-offset: 0.3rem;
+  text-decoration-color: transparent;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: var(--primary_color);
+  text-decoration-color: var(--primary_color);
+}
+
+/* .nav-active:link,
+.nav-active:visited {
+  color: var(--primary_color);
+  text-decoration-color: var(--primary_color);
+} */

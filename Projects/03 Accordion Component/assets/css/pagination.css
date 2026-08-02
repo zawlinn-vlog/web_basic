@@ -1,0 +1,101 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/* ------------------------ */
+/* Navbar INSTALLATION */
+/* ------------------------ */
+
+@import url("./navbar.css");
+
+/* ------------------------ */
+/* FONT INSTALLATION */
+/* ------------------------ */
+
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* 
+MAIN COLOR: #087f5b
+GREY COLOR: #343a40
+*/
+
+:root {
+  --primary_color: #087f5b;
+  --txt_color: #343a40;
+  --light_grey: #adb5bd;
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--txt_color);
+  font-size: 1.6rem;
+  line-height: 1;
+  font-weight: 600;
+}
+
+/* ------------------------ */
+/* Navbar INSTALLATION */
+/* ------------------------ */
+
+.container {
+  width: 70rem;
+  margin: 10rem auto;
+}
+
+.arrow {
+  width: 2.4rem;
+}
+
+span {
+  display: block;
+
+  align-self: center;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: var(--txt_color);
+}
+
+.pagination-container {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1.2rem;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination-items {
+  width: 4.4rem;
+  height: 4.4rem;
+  border-radius: 50%;
+
+  display: grid;
+  place-content: center center;
+}
+
+.pagination-items:first-child,
+.pagination-items:last-child {
+  width: 5.2rem;
+  height: 5.2rem;
+  border: 0.1rem solid var(--txt_color);
+}
+
+.pagination-items:hover {
+  background-color: var(--primary_color);
+  color: #fff;
+  border: none;
+}

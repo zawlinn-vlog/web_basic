@@ -311,6 +311,13 @@ Tools
 
 > တစ်ခုတည်း သီးသန့်သုံးတာတော့မဟုတ်ဘူး လှပအောင် ရောပီး အသုံးပြုလို့ရပါတယ်။
 
+```
+   Land-book.com
+   onepagelove.com
+   awwwards.com
+   screenlane.com
+```
+
 <!-- TODO: Add last video link -->
 
 📫 Reach me out!
