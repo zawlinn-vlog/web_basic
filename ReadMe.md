@@ -15,20 +15,31 @@ What I use packages are &mdash;
 ## Build Responsive Real-world Website Intro &mdash;
 
 1.  Welcome and first steps
+
 2.  HTML Fundamantals
+
 3.  CSS fundamentals
+
 4.  Building Layouts
+
 5.  Web Design Framework
+
 6.  Domponents and Layouts
+
 7.  OMNIFOOD: Desktop
+
 8.  OMNIFOOD: Responsive
+
 9.  OMNIFOOD: Optimizations
 
 Course အကြောင်းမစခင်မှာ
 
 - Server and Client အကြောင်း
+
 - Frontend and Backend Development အကြောင်း
+
 - Static and Dynamic website အကြောင်းနှင့်
+
 - Web Technology ရဲ့ Core language အကြောင်းတွေကို သိရမှာဖြစ်ပါတယ်။
 
 ### Server and Client &mdash;
@@ -52,8 +63,6 @@ HTML ဟာ web technology မှာ အခြေခံအကျဆုံး lan
 CSS ကတော့ HTML ဖြင့် ဖန်တီးထားသော content တွေကို လှပအောင် ပြုလုပ်ပေးပါတယ်။
 
 ### JS - JavaScript
-
-သူကတော့ programming language တစ်ခုဖြစ်ပီး webpage ပေါ်က data တွေ element တွေကို manipulate လုပ်နိုင်ပေးပါတယ်။
 
 <!-- TODO: Add last video link -->
 

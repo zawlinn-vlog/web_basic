@@ -13,7 +13,6 @@ FONT SIZE SYSTEM (px)
 @import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 :root {
-  font-size: 62.5%;
   --primary_color: #444;
   --menu_color: #7048e8;
 }
@@ -22,6 +21,10 @@ FONT SIZE SYSTEM (px)
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {
@@ -74,6 +77,7 @@ menu {
 .menu-link {
   display: inline-block;
   text-decoration: none;
+  font-size: 1.4rem;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.4);
   padding: 0.8rem 1.6rem;
@@ -87,13 +91,15 @@ menu {
 section {
   /* --webkit-overflow: scroll; */
   overflow: scroll;
+  padding: 4rem;
 
   display: flex;
   flex-direction: column;
   gap: 4rem;
-  padding: 4rem;
 }
 
 section div {
   padding: 2.4rem;
+  background-color: #ababab;
+  cursor: pointer;
 }

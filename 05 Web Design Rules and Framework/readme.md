@@ -272,7 +272,7 @@ Tools
 | Title            | Description                                                                                                                       |
 | ---------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | 📝 Overview      | For products and services that care about the consumer, which is transmitted by `claming pastel colors` and `soft serif headings` |
-| 👨🏻‍💻 Industries    | Healthcard, all products with focus on consumer will-being                                                                        |
+| 👨🏻‍💻 Industries    | Healthcare, all products with focus on consumer will-being                                                                        |
 | ✍️ Typography    | Soft serif typeface frequently used for headings, but sans-serif headings might be used too (e.g for software products)           |
 | 🎨 Colors        | Pastel/washed-out colors: light oranges, yellow, browns, greens and blues                                                         |
 | 🌆 Images        | Images and illustrations are usual, matching calm color palette                                                                   |

@@ -21,13 +21,16 @@ GREY COLOR: #343a40
   --primary_color: #087f5b;
   --txt_color: #343a40;
   --light_grey: #adb5bd;
-  font-size: 62.5%;
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {

@@ -26,13 +26,16 @@ GREY COLOR: #343a40
   --primary__color-light: #099268;
   --txt__color: #343a40;
   --btn__color: #efefef;
-  font-size: 62.5%;
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 /* ------------------------ */
