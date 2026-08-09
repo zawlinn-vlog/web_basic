@@ -179,6 +179,43 @@ html {
 }
 ```
 
+### HOW `MEDIA QUERIEs` WORK (WITH `MAX-WIDTH`)
+
+- Desktop first မှာ `max-width`(Media Query) ကိုအသုံးပြု
+- Mobile first မှာတော့ `min-width`(Media Query) ကို အသုံးပြု
+
+for 0 to 600px အတွင်းဆိုရင်
+
+```css
+/* Is width <= 1200px > */
+@media (max-width: 1200px) {
+  /* အတွင်းရှိ code တွေ apply လုပ် 600px ကျော်သွားရင်တော့ အလုပ်မလုပ်တော့ */
+}
+
+/* Is width <= 600px > */
+@media (max-width: 600px) {
+  /* အတွင်းရှိ code တွေ apply လုပ် 600px ကျော်သွားရင်တော့ အလုပ်မလုပ်တော့ */
+}
+
+/* Breakpoint အကြီးကို အရင် define လုပ်တဲ့ ကြီးစဉ်ငယ်လိုက် အတိုင်း define လုပ်ရမယ် ဒါမှ waterfall အတိုင်း code ကို override လုပ်သွားမှာဖြစ်ပါတယ်။ */
+
+/* အပြင်မှာတော့ Global code တွေက အလုပ်လုပ်မှာဖြစ်ပါတယ်။ */
+```
+
+> Media Query က specific viewport အတွက် override လုပ်ပေးနိုင်တဲ့ tool တစ်ခုလို့ ယူဆနိုင်ပါတယ်။
+
+### STRATEGIES FOR SELECTING `BREAKPOINTs`
+
+- အရင်တုန်းကတော့ popular device တွေကို စံထားပြီး breakpoint သတ်မှတ်ပါတယ်။ (Apple Devices - iphone, ipad, macbook and etc.)
+
+- အုပ်စုကို အခြေခံပြီး Breakpoint တွေကို ရွေးချယ်ပါတယ်။ (1200px, 900px, 600px)
+  1. Mobile(300px - 500px)
+  2. Tablet potrait(600px - 900px)
+  3. Tablet landscape(900px - 1100px)
+  4. Desktop ( > 1200px)
+
+- Design ပျက်တဲ့ နေရာမှာ ပြန်ပြင်တာက အကောင်းဆုံး Strategies ပဲဖြစ်ပါတယ်။
+
 <!-- TODO: Add last video link -->
 
 📫 Reach me out!

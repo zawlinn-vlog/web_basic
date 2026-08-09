@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
+    <!-- Always include this line of code!!! -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- INSTALLATION FONTs -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,10 +14,16 @@
       rel="stylesheet"
     />
 
+    <!-- GENERAL CSS FILE -->
     <link rel="stylesheet" href="./assets/css/general.css" />
 
+    <!-- MAIN CSS FILE -->
     <link rel="stylesheet" href="./assets/css/style.css" />
 
+    <!-- MEDIA QUERY FILE -->
+    <link rel="stylesheet" href="./assets/css/query.css" />
+
+    <!-- ION ICONs -->
     <script
       type="module"
       src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"
@@ -23,6 +32,10 @@
       nomodule
       src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"
     ></script>
+
+    <!--  -->
+    <script defer src="./assets/js/app.js"></script>
+
     <title>Ominifood</title>
   </head>
   <body>
@@ -30,6 +43,7 @@
         HEADER SECTION
     ------------------------->
     <header class="header">
+      <!-- LOGO -->
       <a href="#">
         <img
           src="./assets/img/omnifood-logo.png"
@@ -37,6 +51,7 @@
           class="logo"
         />
       </a>
+      <!-- NAVIGATION -->
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li>
@@ -56,6 +71,11 @@
           </li>
         </ul>
       </nav>
+      <!-- MOBILE NAVIGATION -->
+      <button class="btn-mobile-nav">
+        <ion-icon name="menu-outline" class="icon-mobile-nav"></ion-icon>
+        <ion-icon name="close-outline" class="icon-mobile-nav"></ion-icon>
+      </button>
     </header>
 
     <!-----------------------
@@ -553,7 +573,7 @@
               </li>
               <li class="list-item">
                 <ion-icon name="close-outline" class="list-icon"></ion-icon>
-                <span>Get access to lastest recipes</span>
+                <!-- <span>Get access to lastest recipes</span> -->
               </li>
             </ul>
 
