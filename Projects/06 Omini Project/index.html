@@ -5,6 +5,9 @@
 
     <!-- Always include this line of code!!! -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/img/favicon-192.png" />
+    <link rel="apple-touch-icon" href="./assets/img/apple-touch-icon.png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
 
     <!-- INSTALLATION FONTs -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -34,9 +37,9 @@
     ></script>
 
     <!--  -->
-    <script defer src="./assets/js/app.js"></script>
+    <script src="./assets/js/app.js" defer></script>
 
-    <title>Ominifood</title>
+    <title>Ominifood &mdash;</title>
   </head>
   <body>
     <!-----------------------
@@ -55,19 +58,19 @@
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li>
-            <a href="#" class="main-nav-link">How it works</a>
+            <a href="#htw" class="main-nav-link">How it works</a>
           </li>
           <li>
-            <a href="#" class="main-nav-link">Meals</a>
+            <a href="#meals" class="main-nav-link">Meals</a>
           </li>
           <li>
-            <a href="#" class="main-nav-link">Testimonials</a>
+            <a href="#testimonial" class="main-nav-link">Testimonials</a>
           </li>
           <li>
-            <a href="#" class="main-nav-link">Pricings</a>
+            <a href="#price" class="main-nav-link">Pricings</a>
           </li>
           <li>
-            <a href="#" class="main-nav-link nav-cta">Try for free</a>
+            <a href="#cta" class="main-nav-link nav-cta">Try for free</a>
           </li>
         </ul>
       </nav>
@@ -98,10 +101,12 @@
               eat healthy again. Tailored to your personal tastes and
               nutritional needs.
             </p>
-            <a href="#" class="btn btn--full margin-right-sm"
+            <a href="#cta" class="btn btn--full margin-right-sm"
               >Start eating well</a
             >
-            <a href="#" class="btn btn--outline">Learn more &darr;</a>
+            <a href="#testimonial" class="btn btn--outline"
+              >Learn more &darr;</a
+            >
 
             <div class="delivered-meals">
               <div class="delivered-imgs">
@@ -136,11 +141,15 @@
             </div>
           </div>
           <div class="hero-img-box">
-            <img
-              src="./assets/img/hero.png"
-              class="hero-img"
-              alt="women enjoying food, meals in storage container, and food bowls on a table"
-            />
+            <picture>
+              <source srcset="./assets/img/hero.webp" type="image/webp" />
+              <source srcset="./assets/img/hero-min.png" type="image/png" />
+              <img
+                src="./assets/img/hero-min.png"
+                class="hero-img"
+                alt="women enjoying food, meals in storage container, and food bowls on a table"
+              />
+            </picture>
           </div>
         </div>
       </section>
@@ -174,7 +183,7 @@
       <!-----------------------
           HOW IT WORK SECTION
       ------------------------->
-      <section class="section-how">
+      <section class="section-how" id="htw">
         <div class="container">
           <span class="subheading">How it Works</span>
           <h2 class="heading-secondary">
@@ -245,7 +254,7 @@
           MEAL SECTION
       ------------------------->
 
-      <section class="section-meal">
+      <section class="section-meal" id="meals">
         <div class="container">
           <p class="subheading text-center">Sample Meals</p>
           <h2 class="heading-secondary text-center">
@@ -395,7 +404,7 @@
       <!-----------------------
           TESTIMONIALs SECTION
       ------------------------->
-      <section class="section-testimonials">
+      <section class="section-testimonials" id="testimonial">
         <div class="testimonials-container">
           <p class="subheading">Testimonials</p>
           <h2 class="heading-secondary">Once you try it, you can't go back</h2>
@@ -543,7 +552,7 @@
         PRICING & FEATURE SECTION
       ---------------------------->
 
-      <div class="section-pricing">
+      <div class="section-pricing" id="price">
         <div class="container">
           <span class="subheading">Pricing</span>
           <h2 class="heading-secondary">
@@ -659,7 +668,7 @@
                CTA SECTION
       ---------------------------->
 
-      <section class="section-cta">
+      <section class="section-cta" id="cta">
         <div class="container">
           <div class="cta">
             <div class="cta-text-box">
@@ -673,13 +682,15 @@
                 action=""
                 class="cta-form"
                 method="GET"
+                name="sign-up"
                 enctype="multipart/form-data"
+                netlify
               >
                 <div>
                   <label for="name">Full Name</label>
                   <input
                     type="text"
-                    name=""
+                    name="name"
                     id="name"
                     class=""
                     placeholder="John Smith"
@@ -691,7 +702,7 @@
                   <label for="email">Email Address</label>
                   <input
                     type="email"
-                    name=""
+                    name="email"
                     id="email"
                     placeholder="me@example.com"
                     required
@@ -703,7 +714,7 @@
 
                 <div>
                   <label for="select-where">Where did you hear from us?</label>
-                  <select name="" id="select-where" required>
+                  <select name="select-where" id="select-where" required>
                     <option value="">Please choose one option:</option>
                     <option value="friends">Friends and family</option>
                     <option value="youtube">Youtube video</option>
@@ -760,7 +771,8 @@
           </ul>
 
           <p class="copyright">
-            Copyright &copy; 2028 by Ominifood, Inc. All right reserved.
+            Copyright &copy; <span class="year"></span> by Ominifood, Inc. All
+            right reserved.
           </p>
         </div>
 

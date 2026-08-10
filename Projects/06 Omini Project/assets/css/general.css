@@ -93,6 +93,10 @@ html {
 
   /* Percentage of User's browser font-size setting */
   font-size: 62.5%; /* 10/16 = 0.625 = 62.5% */
+  overflow-x: hidden;
+
+  /* DOES NOT WORK IN OLD SAFARI */
+  /* scroll-behavior: smooth; */
 }
 
 body {
